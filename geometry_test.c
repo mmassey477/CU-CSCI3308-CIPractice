@@ -153,7 +153,7 @@ START_TEST(test_2d_area_triangle)
 
     a.x = b.x = c.x = 0;
     a.y = b.y = c.y = 0;
-    ck_assert(coord_2d_area_triangle(&a, &b, &c) == 0);
+    ck_assert(coord_2d_area_triangle(&a, &b, &c) == 0.0);
 
     a.x = 0;
     b.x = 0;
@@ -161,7 +161,7 @@ START_TEST(test_2d_area_triangle)
     a.y = 0;
     b.y = 4;
     c.y = 0;
-    ck_assert(coord_2d_area_triangle(&a, &b, &c) == 4);
+    ck_assert(coord_2d_area_triangle(&a, &b, &c) == 4.0);
 
 }
 END_TEST
